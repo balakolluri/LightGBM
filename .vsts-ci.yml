@@ -143,6 +143,7 @@ jobs:
   pool:
     vmImage: 'vs2017-win2016'
   steps:
+  - checkout: none
   # Download all agent packages from all previous phases
   - task: DownloadBuildArtifacts@0
     displayName: Download package assets
